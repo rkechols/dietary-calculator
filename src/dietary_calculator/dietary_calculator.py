@@ -1,0 +1,2 @@
+class DietaryCalculator:
+    pass
