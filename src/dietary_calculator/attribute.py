@@ -20,6 +20,7 @@ class DietaryAttribute:
     WHEAT = "wheat"
     GLUTEN = "gluten"
     NUTS = "nuts"
+    PEANUTS = "peanuts"
     SOY = "soy"
     ALCOHOL = "alcohol"
     COFFEE = "coffee"
@@ -47,7 +48,8 @@ class DietaryAttributeHierarchy:
         DietaryAttribute.PORK: {DietaryAttribute.MEAT},
         DietaryAttribute.FISH: {DietaryAttribute.MEAT},
         DietaryAttribute.SHELLFISH: {DietaryAttribute.FISH},
-        DietaryAttribute.WHEAT: {DietaryAttribute.GLUTEN}
+        DietaryAttribute.WHEAT: {DietaryAttribute.GLUTEN},
+        DietaryAttribute.PEANUTS: {DietaryAttribute.NUTS},
     }
 
     def __init__(self, hierarchy: Dict[str, Set[str]] = None):
